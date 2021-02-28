@@ -1,0 +1,14 @@
+.logo-container {
+  position: relative;
+  z-index: 6;
+}
+
+.logo-text {
+  font-size: 8.5em;
+}
+
+.svgLogo {
+  max-width: 0.6em;
+
+  fill: white;
+}
