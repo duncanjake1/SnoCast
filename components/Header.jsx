@@ -1,6 +1,8 @@
 import React from 'react'
 
 import Logo from './Logo.jsx'
+import Navbar from './Navbar.jsx'
+import './styles/header.css'
 
 const Header = () => {
     return(
@@ -8,6 +10,7 @@ const Header = () => {
             <div className="main-logo-container">
                 <Logo />
             </div>
+            <Navbar />
         </div>
     )
 }

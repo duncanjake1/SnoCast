@@ -1,6 +1,11 @@
 import React from 'react'
-
 import GoogleMap from 'google-map-react'
+
+
+import './styles/map.css'
+
+import MapMarker from './MapMarker.jsx'
+import snowReportData from './testDatas/snowReportData.json'
  
 const Map = () => {
 
@@ -11,6 +16,9 @@ const Map = () => {
         lng: -111.042931,
       }
     const zoomLevel = 6
+
+   const data = [...snowReportData]
+   console.log(data)
 
     return (
         <div className="map">
@@ -24,6 +32,36 @@ const Map = () => {
                     defaultCenter={location}
                     defaultZoom={zoomLevel}
                 >
+                    {data[0].map(report => 
+                            <MapMarker 
+                                lat={report.lat}
+                                lng={report.lng}
+                                name={report.description}
+                                color="red"
+                            />
+                    )}
+                    {data[1].map(report => 
+                            <MapMarker 
+                                lat={report.lat}
+                                lng={report.lng}
+                                name={report.description}
+                                color="blue"
+                            />
+                    )}
+                    
+
+                    {/* <MapMarker
+                        lat={location.lat}
+                        lng={location.lng}
+                        name="My Marker"
+                        color="blue"
+                    />
+                    <MapMarker
+                        lat={46}
+                        lng={-112}
+                        name="My Marker 2"
+                        color="red"
+                    /> */}
                 </GoogleMap>
             </div>
         </div>

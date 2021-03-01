@@ -1,0 +1,57 @@
+.pin {
+  width: 30px;
+  height: 30px;
+  border-radius: 50% 50% 50% 0;
+  background: #00cae9;
+  position: absolute;
+  transform: rotate(-45deg);
+  left: 50%;
+  top: 50%;
+  margin: -20px 0 0 -20px;
+}
+.pin:after {
+  content: "";
+  width: 14px;
+  height: 14px;
+  margin: 8px 0 0 8px;
+  background: #e6e6e6;
+  position: absolute;
+  border-radius: 50%;
+}
+
+.bounce {
+  animation-name: bounce;
+  animation-fill-mode: both;
+  animation-duration: 1s;
+}
+
+.pulse {
+  background: #d6d4d4;
+  border-radius: 50%;
+  height: 14px;
+  width: 14px;
+  position: absolute;
+  margin: 11px 0px 0px -12px;
+  transform: rotateX(55deg);
+  z-index: -2;
+}
+
+@keyframes bounce {
+  0% {
+    opacity: 0;
+    transform: translateY(-2000px) rotate(-45deg);
+  }
+
+  60% {
+    opacity: 1;
+    transform: translateY(30px) rotate(-45deg);
+  }
+
+  80% {
+    transform: translateY(-10px) rotate(-45deg);
+  }
+
+  100% {
+    transform: translateY(0) rotate(-45deg);
+  }
+}

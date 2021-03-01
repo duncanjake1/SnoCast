@@ -1,0 +1,37 @@
+[
+    [
+        {
+            "lat": 45.2499,
+            "lng": -117.2924,
+            "description": "Three skiiers died in avalanche"
+        },
+        {
+            "lat": 40.5884,
+            "lng": -111.6386,
+            "description": "Two snowboarders collided at MACH-10 and exploded into tiny dust particles"
+        },
+        {
+            "lat": 45.2857,
+            "lng": -111.4012,
+            "description": "A schoolbus load of kids ruined everyone's lunch at the Big Sky lodge"
+        }
+    ],
+
+    [
+        {
+            "lat": 45.3736,
+            "lng": -121.6960,
+            "description": "conditions GOOD"
+        },
+        {
+            "lat": 43.4799,
+            "lng": -110.7624,
+            "description": "conditions BAD"
+        },
+        {
+            "lat": 44.2583,
+            "lng": -71.4433,
+            "description": "conditions SAD :,("
+        }
+    ]
+]

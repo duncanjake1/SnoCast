@@ -13,7 +13,6 @@ const Main = () => {
             <Header />
             <Info />
             <Map />
-            
         </div>
     )
 }

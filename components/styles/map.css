@@ -1,0 +1,13 @@
+.map {
+  grid-area: map;
+  border-radius: 15px;
+  background-color: rgba(91, 171, 245, 0.5);
+  padding: 20px;
+}
+
+.map-container {
+  max-width: "350px";
+  height: "350px";
+  overflow-x: "hidden";
+  overflow-y: "hidden";
+}
