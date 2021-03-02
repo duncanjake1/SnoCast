@@ -4,7 +4,7 @@
   align-content: center;
   align-items: stretch;
   grid-template-areas: "logo navbar";
-  grid-template-columns: 30vw 1fr;
+  grid-template-columns: 33% 1fr;
   border-radius: 15px;
   background-color: rgba(91, 171, 245, 0.5);
   height: auto;
@@ -15,14 +15,15 @@
   grid-area: logo;
   font-size: 1.5vh;
   margin-left: 20px;
-  margin-right: 20px;
 }
 
 .navbar-container {
   grid-area: navbar;
   text-justify: auto;
-  display: inline-block;
+  padding-right: 10px;
   align-items: center;
+  display: flex;
+  justify-content: space-between;
 }
 
 ul {
@@ -40,4 +41,5 @@ li {
 
 li:hover {
   background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
 }

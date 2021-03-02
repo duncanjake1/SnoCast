@@ -6,8 +6,6 @@
 }
 
 .map-container {
-  max-width: "350px";
-  height: "350px";
   overflow-x: "hidden";
   overflow-y: "hidden";
 }

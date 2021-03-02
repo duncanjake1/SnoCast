@@ -3,12 +3,12 @@ import './styles/mapMarker.css'
 
 const MapMarker = (props) => {
     
-    const { color, name, id } = props;
+    const { color, name, key } = props;
 
     return(
         <div>
             <div className="pin bounce"
-                key={id}
+                key={key}
                 style={{backgroundColor: color, cursor: 'pointer'}}
                 title={name}
             />

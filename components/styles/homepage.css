@@ -6,6 +6,7 @@
 html {
   height: 100%;
   background: linear-gradient(to top, black, 85%, #4957b0);
+  background-attachment: fixed;
 }
 
 h1 {
