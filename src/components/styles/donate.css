@@ -1,0 +1,16 @@
+.donate-page {
+  display: grid;
+  grid-template-areas:
+    "header"
+    "donate";
+  grid-gap: 15px;
+  grid-template-rows: 16vh 1fr;
+  padding: 20px;
+}
+
+.donate-main {
+  grid-area: donate;
+  border-radius: 15px;
+  background-color: rgba(91, 171, 245, 0.5);
+  padding: 20px;
+}

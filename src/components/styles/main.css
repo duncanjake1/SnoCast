@@ -2,14 +2,29 @@ p {
   color: white;
 }
 
-.main-content {
+.page-template-grid {
   display: grid;
   grid-template-areas:
-    "header header"
-    "navbar map"
-    "navbar map";
+    "header"
+    "main";
   grid-gap: 15px;
   grid-template-rows: 16vh 1fr;
+  padding: 20px;
+}
+
+.content-template {
+  grid-area: main;
+  display: grid;
+}
+
+.main-content-grid {
+  grid-gap: 15px;
+  grid-template-areas: "info map";
   grid-template-columns: 25vw 1fr;
+}
+
+.single-container {
+  border-radius: 15px;
+  background-color: rgba(91, 171, 245, 0.5);
   padding: 20px;
 }

@@ -13,11 +13,13 @@ const Main = () => {
     const [ showSnowConditions, setShowSnowConditions ] = useState(false)
 
     return(
-        <div className="main-content">
+        <div className="page-template-grid">
             <Header />
             <MapPinTypeContext.Provider value={{showAccidents, setShowAccidents, showSnowConditions, setShowSnowConditions }}> 
-                <Info />
-                <Map />
+                <div className="content-template main-content-grid">
+                    <Info />
+                    <Map />
+                </div>
             </MapPinTypeContext.Provider>
         </div>
     )

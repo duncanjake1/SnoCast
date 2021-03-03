@@ -1,0 +1,16 @@
+.get-cast-container {
+  display: grid;
+  grid-template-areas:
+    "header"
+    "cast";
+  grid-gap: 15px;
+  grid-template-rows: 16vh 1fr;
+  padding: 20px;
+}
+
+.get-cast-main {
+  grid-area: cast;
+  border-radius: 15px;
+  background-color: rgba(91, 171, 245, 0.5);
+  padding: 20px;
+}

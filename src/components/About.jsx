@@ -4,8 +4,11 @@ import Header from './Header.jsx'
 
 const About = () => {
     return(
-        <div>
+        <div className="page-template-grid">
             <Header />
+            <div className="content-template single-container">
+                <p>I'm an about page</p>
+            </div>
         </div>
     )
 }

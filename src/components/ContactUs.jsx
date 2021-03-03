@@ -1,12 +1,15 @@
 import React from 'react'
 
 import Header from './Header.jsx'
+import './styles/contactUs.css'
 
 const ContactUs = () => {
     return(
-        <div>
+        <div className="page-template-grid">
             <Header />
-            <p>I'm a contact page</p>
+            <div className="content-template single-container">
+                <p>I'm a contact page</p>
+            </div>
         </div>
     )
 }

@@ -1,8 +1,8 @@
 .info-container {
-  grid-area: navbar;
+  grid-area: info;
   border-radius: 15px;
   background-color: rgba(91, 171, 245, 0.5);
-  height: 75vh;
+  height: 1fr;
 }
 
 .info-text {
