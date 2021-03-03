@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 import Logo from './Logo.jsx'
 import Navbar from './Navbar.jsx'
@@ -8,7 +9,9 @@ const Header = () => {
     return(
         <div className="header">
             <div className="main-logo-container">
-                <Logo />
+                <Link to="/home" style={{textDecoration: 'none'}}>
+                    <Logo />
+                </Link>
             </div>
             <Navbar />
         </div>

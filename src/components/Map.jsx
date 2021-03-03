@@ -35,7 +35,7 @@ const Map = () => {
                     defaultZoom={zoomLevel}
                 >
                     {showAccidents && data[0].map(report => //data[0] is index for accident reports
-                        <MapMarker 
+                        <MapMarker
                             key={report.id}
                             lat={report.lat}
                             lng={report.lng}
@@ -44,7 +44,7 @@ const Map = () => {
                         />
                     )}
                     {showSnowConditions && data[1].map(report => //data[1] is index for accident reports
-                        <MapMarker 
+                        <MapMarker
                             lat={report.lat}
                             lng={report.lng}
                             name={report.description}

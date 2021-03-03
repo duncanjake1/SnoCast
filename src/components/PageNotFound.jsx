@@ -6,7 +6,7 @@ const PageNotFound = ({history}) => {
         <div>
             <h1>404</h1>
             <p>Couldn't quite find what you're looking for...</p>
-            <Button onClick={() => history.push('/main')}>Go Home?</Button>
+            <Button onClick={() => history.push('/')}>Go Home?</Button>
         </div>
     )
 }

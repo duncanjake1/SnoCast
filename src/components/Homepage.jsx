@@ -7,7 +7,7 @@ import MountainCss from './MountainCss.jsx'
 const Homepage = ({history}) => {
     
     function handleClick(){
-        history.push('/main')
+        history.push('/')
     }
     return(
         <div className="homepage-content">
