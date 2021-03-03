@@ -5,15 +5,12 @@ import { MapPinTypeContext } from './MapPinTypeContext.jsx'
 
 const Legend = () => {
 
-    const [showAccidents, setShowAccidents] = useState(true)
-    const [showSnowReports, setShowSnowReports] = useState(true)
-
-    const showReports = useContext(MapPinTypeContext)
+    const { showAccidents, setShowAccidents, showSnowConditions, setShowSnowConditions } = useContext(MapPinTypeContext)
 
     return (
         <div className="legend-container">
             <h2>Legend</h2>
-            <p>{showReports}</p>
+            <p>What do you want to see?</p>
             <br />
             <Form>
                 <Form.Check
@@ -27,15 +24,13 @@ const Legend = () => {
                 <Form.Check
                     custom
                     type='checkbox'
-                    checked={showSnowReports}
-                    onClick={() => setShowSnowReports(!showSnowReports)}
+                    checked={showSnowConditions}
+                    onClick={() => setShowSnowConditions(!showSnowConditions)}
                     readOnly
                     label='Show Snow Conditions'
                 />
             </Form>
             <br />
-            <p>Show me {(!showAccidents && !showSnowReports) && '...'}<br /> {showAccidents && 'accident reports'} {(showAccidents && showSnowReports) && <br />} {showSnowReports && 'snow reports'}</p>
-
         </div>
     )
 }

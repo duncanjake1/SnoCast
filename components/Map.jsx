@@ -5,11 +5,12 @@ import GoogleMap from 'google-map-react'
 import './styles/map.css'
 
 import MapMarker from './MapMarker.jsx'
-import Legend from './Legend.jsx'
+import { MapPinTypeContext } from './MapPinTypeContext.jsx'
 import snowReportData from './testDatas/snowReportData.json'
  
 const Map = () => {
 
+    const { showAccidents, showSnowConditions } = useContext(MapPinTypeContext)
 
     const API_KEY = `${process.env.REACT_APP_GOOGLE_MAPS_API_KEY}`;
     const location = {
@@ -33,7 +34,7 @@ const Map = () => {
                     defaultCenter={location}
                     defaultZoom={zoomLevel}
                 >
-                    {data[0].map(report => //data[0] is index for accident reports
+                    {showAccidents && data[0].map(report => //data[0] is index for accident reports
                         <MapMarker 
                             key={report.id}
                             lat={report.lat}
@@ -42,7 +43,7 @@ const Map = () => {
                             color="red"
                         />
                     )}
-                    {data[1].map(report => //data[1] is index for accident reports
+                    {showSnowConditions && data[1].map(report => //data[1] is index for accident reports
                         <MapMarker 
                             lat={report.lat}
                             lng={report.lng}
