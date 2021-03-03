@@ -1,0 +1,15 @@
+p {
+  color: white;
+}
+
+.main-content {
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "navbar map"
+    "navbar map";
+  grid-gap: 15px;
+  grid-template-rows: 16vh 1fr;
+  grid-template-columns: 25vw 1fr;
+  padding: 20px;
+}

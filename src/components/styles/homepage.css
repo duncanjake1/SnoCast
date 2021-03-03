@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+  background: linear-gradient(to top, black, 85%, #4957b0);
+  background-attachment: fixed;
+}
+
+h1 {
+  color: white;
+}
+
+body {
+  margin: 0;
+  background-repeat: no-repeat;
+}
+
+.homepage-content {
+  text-align: center;
+}
+
+.homepage-logo {
+  margin: auto;
+  padding: 5vh;
+}
+
+.mountain1 {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 25%;
+  border-top: 0px solid transparent;
+  border-right: 10vw solid transparent;
+  border-bottom: 15vw solid #6561bc;
+  border-left: 10vw solid transparent;
+  z-index: -2;
+}
+
+.snow1,
+.snow2,
+.snow3 {
+  position: absolute;
+  content: "";
+  bottom: -4.5vw;
+  left: -3vw;
+  border-top: 0px solid transparent;
+  border-right: 3.1vw solid transparent;
+  border-bottom: 4.5vw solid #cccccc;
+  border-left: 3vw solid transparent;
+  z-index: -2;
+}
+
+.mountain2 {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 35%;
+  border-top: 0px solid transparent;
+  border-right: 15vw solid transparent;
+  border-bottom: 22.5vw solid #716dba;
+  border-left: 15vw solid transparent;
+  z-index: -3;
+}
+
+.snow2 {
+  border-bottom: 4.5vw solid rgba(255, 255, 255, 0.6);
+}
+
+.mountain3 {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 45%;
+  border-top: 0px solid transparent;
+  border-right: 22.5vw solid transparent;
+  border-bottom: 33.75vw solid #8b88b9;
+  border-left: 22.5vw solid transparent;
+  z-index: -4;
+}
+
+.snow3 {
+  left: -4.2vw;
+  bottom: -6.25vw;
+  border-right: 4.2vw solid transparent;
+  border-bottom: 6.25vw solid rgba(255, 255, 255, 0.5);
+  border-left: 4.2vw solid transparent;
+}
+
+Button {
+  position: relative;
+  z-index: 7;
+  padding: 2.5vh;
+  font-size: 2.5vw;
+}

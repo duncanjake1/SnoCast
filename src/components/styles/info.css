@@ -1,0 +1,15 @@
+.info-container {
+  grid-area: navbar;
+  border-radius: 15px;
+  background-color: rgba(91, 171, 245, 0.5);
+  height: 75vh;
+}
+
+.info-text {
+  padding: 10px;
+  margin: 10px;
+}
+
+.legend-container {
+  background-color: rgba(250, 137, 246, 0.8);
+}
