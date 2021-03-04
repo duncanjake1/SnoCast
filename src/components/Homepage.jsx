@@ -11,7 +11,6 @@ const Homepage = ({history}) => {
     }
     return(
         <div className="homepage-content">
-            {/* <animated.h1 style={props}>SnowCast</animated.h1> */}
             <div className="homepage-logo">
                 <Logo />
             </div>

@@ -14,3 +14,20 @@
   background-color: rgba(91, 171, 245, 0.5);
   padding: 20px;
 }
+
+.report-header {
+  padding-bottom: 20px;
+}
+
+.source-logo {
+  max-width: 200px;
+  height: auto;
+}
+
+.audio-div {
+  background-color: darkcyan;
+}
+
+audio {
+  width: 100%;
+}

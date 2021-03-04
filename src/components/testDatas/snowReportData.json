@@ -4,19 +4,31 @@
             "id": 1,
             "lat": 45.2499,
             "lng": -117.2924,
-            "description": "Three skiiers died in avalanche"
+            "title": "Three skiiers died in avalanche",
+            "description": "this, is a generic description about the report, this will be converted into audio via text to speach program. this text was scraped off of a website. You may click the following link to be brough to the source website",
+            "url": "https://avalanche.state.co.us/caic/acc/acc_report.php?acc_id=791&accfm=rep",
+            "source": "MT Avalanche Center",
+            "imgUrl": "https://1yiqgbbqm437m2y13wi18x2m-wpengine.netdna-ssl.com/wp-content/uploads/2017/09/favicon.png"
         },
         {
             "id": 2,
             "lat": 40.5884,
             "lng": -111.6386,
-            "description": "Two snowboarders collided at MACH-10 and exploded into tiny dust particles"
+            "title": "Two snowboarders collided at MACH-10 and exploded into tiny dust particles",
+            "description": "this, is a generic description about the report, this will be converted into audio via text to speach program. this text was scraped off of a website. You may click the following link to be brough to the source website",
+            "url": "https://avalanche.state.co.us/caic/acc/acc_report.php?acc_id=791&accfm=rep",
+            "source": "MT Avalanche Center",
+            "imgUrl": "https://1yiqgbbqm437m2y13wi18x2m-wpengine.netdna-ssl.com/wp-content/uploads/2017/09/favicon.png"
         },
         {
             "id": 3,
             "lat": 45.2857,
             "lng": -111.4012,
-            "description": "A schoolbus load of kids ruined everyone's lunch at the Big Sky lodge"
+            "title": "A schoolbus load of kids ruined everyone's lunch at the Big Sky lodge",
+            "description": "this, is a generic description about the report, this will be converted into audio via text to speach program. this text was scraped off of a website. You may click the following link to be brough to the source website",
+            "url": "https://avalanche.state.co.us/caic/acc/acc_report.php?acc_id=791&accfm=rep",
+            "source": "MT Avalanche Center",
+            "imgUrl": "https://1yiqgbbqm437m2y13wi18x2m-wpengine.netdna-ssl.com/wp-content/uploads/2017/09/favicon.png"
         }
     ],
 
@@ -25,19 +37,31 @@
             "id": 1,
             "lat": 45.3736,
             "lng": -121.6960,
-            "description": "conditions GOOD"
+            "title": "conditions GOOD",
+            "description": "this, is a generic description about the report, this will be converted into audio via text to speach program. this text was scraped off of a website. You may click the following link to be brough to the source website",
+            "url": "https://avalanche.state.co.us/caic/acc/acc_report.php?acc_id=791&accfm=rep",
+            "source": "MT Avalanche Center",
+            "imgUrl": "https://1yiqgbbqm437m2y13wi18x2m-wpengine.netdna-ssl.com/wp-content/uploads/2017/09/favicon.png"
         },
         {
             "id": 2,
             "lat": 43.4799,
             "lng": -110.7624,
-            "description": "conditions BAD"
+            "title": "conditions BAD",
+            "description": "this, is a generic description about the report, this will be converted into audio via text to speach program. this text was scraped off of a website. You may click the following link to be brough to the source website",
+            "url": "https://avalanche.state.co.us/caic/acc/acc_report.php?acc_id=791&accfm=rep",
+            "source": "MT Avalanche Center",
+            "imgUrl": "https://1yiqgbbqm437m2y13wi18x2m-wpengine.netdna-ssl.com/wp-content/uploads/2017/09/favicon.png"
         },
         {
             "id": 3,
             "lat": 44.2583,
             "lng": -71.4433,
-            "description": "conditions SAD :,("
+            "title": "conditions SAD :,("
+,           "description": "this, is a generic description about the report, this will be converted into audio via text to speach program. this text was scraped off of a website. You may click the following link to be brough to the source website",
+            "url": "https://avalanche.state.co.us/caic/acc/acc_report.php?acc_id=791&accfm=rep",
+            "source": "MT Avalanche Center",
+            "imgUrl": "https://1yiqgbbqm437m2y13wi18x2m-wpengine.netdna-ssl.com/wp-content/uploads/2017/09/favicon.png"
         }
     ]
 ]

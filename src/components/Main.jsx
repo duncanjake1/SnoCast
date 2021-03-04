@@ -9,8 +9,8 @@ import './styles/main.css'
 
 const Main = () => {
     
-    const [ showAccidents, setShowAccidents ] = useState(false)
-    const [ showSnowConditions, setShowSnowConditions ] = useState(false)
+    const [ showAccidents, setShowAccidents ] = useState(true)
+    const [ showSnowConditions, setShowSnowConditions ] = useState(true)
 
     return(
         <div className="page-template-grid">

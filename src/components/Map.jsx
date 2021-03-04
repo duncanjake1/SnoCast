@@ -39,7 +39,11 @@ const Map = () => {
                             key={report.id}
                             lat={report.lat}
                             lng={report.lng}
-                            name={report.description}
+                            source={report.source}
+                            url={report.url}
+                            imgUrl={report.imgUrl}
+                            description={report.description}
+                            name={report.title}
                             color="red"
                         />
                     )}
@@ -47,7 +51,11 @@ const Map = () => {
                         <MapMarker
                             lat={report.lat}
                             lng={report.lng}
-                            name={report.description}
+                            source={report.source}
+                            url={report.url}
+                            imgUrl={report.imgUrl}
+                            description={report.description}
+                            name={report.title}
                             color="blue"
                         />
                     )}
