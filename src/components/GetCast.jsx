@@ -29,9 +29,9 @@ const GetCast = () => {
                     />
                 </div>
                 <p>description: {castInfoConditions.description}</p>
-                <Link to={castInfoConditions.url}>
-                    <p>read more...</p>
-                </Link>
+                <a target="_blank" href={castInfoConditions.url}>
+                    read more...
+                </a>
             </div>
         </div>
     )
