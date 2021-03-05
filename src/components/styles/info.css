@@ -13,3 +13,9 @@
 .legend-container {
   background-color: rgba(250, 137, 246, 0.8);
 }
+
+@media only screen and (max-width: 800px) {
+  .info-container {
+    width: 100%;
+  }
+}

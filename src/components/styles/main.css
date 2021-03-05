@@ -28,3 +28,12 @@ p {
   background-color: rgba(91, 171, 245, 0.5);
   padding: 20px;
 }
+
+@media only screen and (max-width: 800px) {
+  .content-template {
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}

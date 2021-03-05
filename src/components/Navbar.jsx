@@ -6,23 +6,26 @@ import { useMediaQuery } from 'react-responsive'
 const Navbar = () => {
 
     const [menuOpen, setMenuOpen] = useState(false)
-    const isMobile = useMediaQuery({ query: '(max-width: 1000px)' })
+    const isMobile = useMediaQuery({ query: '(max-width: 700px)' })
 
     const linkStyle={
         textDecoration: "none"
     }
 
     return(
-        <div className={`navbar-container ${isMobile && '.burger-button'}`}>
+        <div className={'navbar-container'}>
             {isMobile ? 
             <Menu 
+                right
+                width={ 200 }
                 isOpen={menuOpen}
                 onOpen={() => setMenuOpen(true)}
-                onClose={() => setMenuOpen(false)}>
-                <a id="home" className="menu-item" href="/">Home</a>
-                <a id="about" className="menu-item" href="/about">About</a>
-                <a id="contact" className="menu-item" href="/contact">Contact</a>
-                <a className="menu-item--small" href="">Settings</a>
+                onClose={() => setMenuOpen(false)}
+            >
+                <Link to="/" style={linkStyle}><li><h2>Home</h2></li></Link>
+                <Link to="/about" style={linkStyle}><li><h2>About</h2></li></Link>
+                <Link to="/donate" style={linkStyle}><li><h2>Donate</h2></li></Link>
+                <Link to="/contact" style={linkStyle}><li><h2>Contact Us!</h2></li></Link>
             </Menu>
             :
             <ul>
