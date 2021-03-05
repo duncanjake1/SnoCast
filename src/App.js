@@ -22,10 +22,17 @@ function App() {
       <Snowfall style={{zIndex: -1}}/>
       <BrowserRouter>
         <Switch>
-          <GetCastContext.Provider value={{castInfoConditions, setCastInfoConditions}}>
-            <Route path="/" exact component={Main} />
-            <Route path="/getCast" exact component={GetCast} />
-          </GetCastContext.Provider>
+          {/* I think this is causing a bug. the components after the context provider are not rendering. */}
+          <Route path="/" exact>
+            <GetCastContext.Provider value={{castInfoConditions, setCastInfoConditions}}> 
+              <Main />
+            </GetCastContext.Provider>
+          </Route>
+          <Route path="/getCast" exact>
+            <GetCastContext.Provider value={{castInfoConditions, setCastInfoConditions}}> 
+              <GetCast />
+            </GetCastContext.Provider>
+          </Route>
           <Route path="/home" exact component={Homepage} />
           <Route path="/about" exact component={About} />
           <Route path="/donate" exact component={Donate} />

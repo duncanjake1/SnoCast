@@ -1,11 +1,9 @@
 import React, { useContext } from 'react'
 import ReactAudioPlayer from 'react-audio-player'
-import { Link } from 'react-router-dom'
 
 import Header from './Header.jsx'
 import './styles/getCast.css'
 import testAudio from './testDatas/testAudio.mp3'
-import testImg from './testDatas/testImg.png'
 import { GetCastContext } from './GetCastContext.jsx'
 
 const GetCast = () => {
