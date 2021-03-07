@@ -12,7 +12,6 @@ import Donate from './components/Donate.jsx'
 import ContactUs from './components/ContactUs.jsx'
 import ReportIssue from './components/ReportIssue.jsx'
 import PageNotFound from './components/PageNotFound.jsx'
-import TestPage from './components/TestPage.jsx'
 
 function App() {
 
@@ -39,7 +38,6 @@ function App() {
           <Route path="/donate" exact component={Donate} />
           <Route path="/contact" exact component={ContactUs} />
           <Route path="/report" exact component={ReportIssue} />
-          <Route path="/testPage" exact component={TestPage} />
           <Route path="/" component={PageNotFound} />
         </Switch>
       </BrowserRouter>

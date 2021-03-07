@@ -27,7 +27,7 @@ const GetCast = () => {
                     />
                 </div>
                 <p>description: {castInfoConditions.description}</p>
-                <a target="_blank" href={castInfoConditions.url}>
+                <a target="_blank" rel="noreferrer" href={castInfoConditions.url}>
                     read more...
                 </a>
             </div>
