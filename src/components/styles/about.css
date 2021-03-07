@@ -1,5 +1,8 @@
 .snowcast-bio {
   text-align: center;
+  background-color: rgba(91, 171, 245, 0.9);
+  border-radius: 15px;
+  padding: 5px;
 }
 
 .personal-bio {
@@ -8,6 +11,13 @@
   flex-direction: row;
   justify-content: space-around;
   text-align: center;
+}
+
+@media only screen and (max-width: 800px) {
+  .personal-bio {
+    flex-direction: column;
+    gap: 40px;
+  }
 }
 
 .img-container {

@@ -12,6 +12,9 @@
 
 .legend-container {
   background-color: rgba(250, 137, 246, 0.8);
+  border-radius: 15px;
+  border: solid black 3px;
+  padding: 5px;
 }
 
 @media only screen and (max-width: 800px) {

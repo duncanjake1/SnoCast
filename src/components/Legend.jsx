@@ -9,8 +9,8 @@ const Legend = () => {
 
     return (
         <div className="legend-container">
-            <h2>Legend</h2>
-            <p>What do you want to see?</p>
+            <h2 style={{textAlign: 'center'}}>Legend</h2>
+            <p style={{textAlign: 'center'}}>What do you want to see?</p>
             <br />
             <Form>
                 <Form.Check

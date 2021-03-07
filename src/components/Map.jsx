@@ -24,7 +24,7 @@ const Map = () => {
 
     return (
         <div className="map">
-            <h2>Select location to receive report</h2>
+            <h2 style={{textAlign: 'center', paddingBottom: '7px'}}>Select location to receive report</h2>
     
             <div className="map-container">
                 <GoogleMap
@@ -47,6 +47,7 @@ const Map = () => {
                             color="red"
                         />
                     )}
+                    
                     {showSnowConditions && data[1].map(report => //data[1] is index for accident reports
                         <MapMarker
                             lat={report.lat}

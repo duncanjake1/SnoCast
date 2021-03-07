@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import { useSpring, animated } from 'react-spring'
 
 import Header from './Header.jsx'
@@ -22,9 +22,16 @@ const About = () => {
                 <div className="snowcast-bio">
                     <Logo />
                     <h2 style={{color: "lightgray", paddingBottom: '15px'}}>Making backcountry safety information more accessible than ever</h2>
-                    <p>Our goal here at SnoCast is to make it as easy as possible to digest the latest
+                    <h1 style={{color: 'red'}}>THIS SITE IS UNDER CONSTRUCTION</h1>
+                    <p style={{color: 'black'}}>(but we have big plans in the works)</p>
+                    <br />
+                    <p>Our goal at SnoCast is to make it as easy as possible to digest the latest
                         information on accident reports and snow conditions, so that you can be as safe as
-                        possible in the backcountry
+                        possible in the backcountry! <br /> <br />
+                        In the finished version of this site, we plan to have a backend database comprised of the latest
+                        ski accident and snow conditions information. This information will be accesible to the users by clicking
+                        on one of the pins on the homescreen map. The text that was scraped for that specific report will then be ran through
+                        a text-to-speech program, essentially turning that report into an easily digestible audio podcast!
                     </p>
                 </div>
                 <div className="personal-bio">
@@ -52,7 +59,7 @@ const About = () => {
                         </div>
                         <h2>Duncan Jacobsen</h2>
                         <h3>Frontend Web Designer</h3>
-                        <p>about me:</p>
+                        {/* <p>about me:</p> */}
                     </div>
                     <div className="tom-bio">
                         <div className="img-container">
@@ -78,7 +85,7 @@ const About = () => {
                         </div>
                         <h2>Tom Chingas</h2>
                         <h3>Backend Engineer</h3>
-                        <p>about me:</p>
+                        {/* <p>about me:</p> */}
                     </div>
                 </div>
             </div>
