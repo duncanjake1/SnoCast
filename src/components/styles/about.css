@@ -1,5 +1,34 @@
+.snowcast-bio {
+  text-align: center;
+}
+
+.personal-bio {
+  padding-top: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.img-container {
+  position: relative;
+}
+
 .mug-shot {
+  position: relative;
   width: 300px;
   height: 300px;
+  object-fit: cover;
+  border: 5px solid white;
   border-radius: 50%;
+}
+
+.github-text {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 5px;
+  border-radius: 8px;
+  background-color: rgba(0, 0, 0, 0.7);
 }

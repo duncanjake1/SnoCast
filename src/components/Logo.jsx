@@ -9,7 +9,7 @@ const Logo = () => {
 
 	const [isHovering, setIsHovering] = useState(false)
 	const [snowflakeAngle, setSnowflakeAngle] = useState(0)
-	const timing = 1000
+	const timing = 750
 
 	function handleHover() {
 		setIsHovering(true);
