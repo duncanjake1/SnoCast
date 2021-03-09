@@ -22,7 +22,6 @@ function App() {
       <Snowfall style={{zIndex: -1}}/>
       <BrowserRouter>
         <Switch>
-          {/* I think this is causing a bug. the components after the context provider are not rendering. */}
           <Route path="/" exact>
             <GetCastContext.Provider value={{castInfoConditions, setCastInfoConditions}}> 
               <Main />

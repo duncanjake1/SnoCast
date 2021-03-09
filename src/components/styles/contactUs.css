@@ -14,3 +14,19 @@
   background-color: rgba(91, 171, 245, 0.5);
   padding: 20px;
 }
+
+.contact-description {
+  text-align: center;
+  padding-bottom: 5px;
+}
+
+.contact-form-container {
+  padding: 15px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  text-align: center;
+}
