@@ -1,29 +1,3 @@
-p {
-  color: white;
-}
-
-.page-template-grid {
-  display: grid;
-  grid-template-areas:
-    "header"
-    "main";
-  grid-gap: 15px;
-  grid-template-rows: 16vh 1fr;
-  padding: 20px;
-}
-
-@media only screen and (max-width: 700px) {
-  .page-template-grid {
-    padding: 10px;
-    grid-gap: 8px;
-  }
-}
-
-.content-template {
-  grid-area: main;
-  display: grid;
-}
-
 .main-content-grid {
   grid-gap: 15px;
   grid-template-areas: "info map";

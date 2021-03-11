@@ -13,23 +13,17 @@ const ContactForm = (props) => {
         e.preventDefault();
 
         emailjs.sendForm(SERVICE_KEY, TEMPLATE_KEY, e.target, USER_KEY)
-        .then((result) => {
-            console.log(result)
-            console.log(result.text);
-        }, (error) =>{
-            console.log(error)
-            console.log(error.text);
-        })
+        
         .then(props.onSubmit(true))// callback to parent component to set state
     }
 
     return(
         <div>
-            <div className="contact-description">
-                <h2>We'd love to hear from you!</h2>
-                <p>Drop us a line, and we'll get back to you as soon as possible!</p>
+            <div className="content-header">
+                <h2>We'd love to hear from you</h2>
+                <p>Drop us a line, and we'll get back to you as soon as possible</p>
             </div>
-            <div className="contact-form-container snowcast-bio">
+            <div className="contact-form-container inner-div">
                 <Form className="contact-form" onSubmit={handleSubmit}>
                     <Form.Group controlId="exampleForm.ControlInput1">
                         <Form.Label>Name</Form.Label>
@@ -51,8 +45,8 @@ const ContactForm = (props) => {
                         <br />
                         <Form.Control as="textarea" placeholder="Whats up?" rows={10} style={{width: '80%'}} name="message"/>
                     </Form.Group>
-                    <Button variant="primary" type="submit">
-                        Submit
+                    <Button variant="primary" type="submit" >
+                        Send
                     </Button>
                 </Form>
             </div>

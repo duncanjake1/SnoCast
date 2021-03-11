@@ -9,7 +9,7 @@ const Info = () => {
             <div className="info-text">
                 <h2>Welcome!</h2>
                 <br/>
-                <div className='snowcast-bio'>
+                <div className='inner-div'>
                 <h2 style={{color: 'red'}}>THIS SITE IS UNDER CONSTRUCTION</h2>
                 <p>please check out our 'About' page to see what's in the works!</p>
                 </div>
