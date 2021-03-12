@@ -5,7 +5,6 @@ import Snowfall from 'react-snowfall'
 import { GetCastContext } from './components/GetCastContext.jsx'
 
 import Header from './components/Header.jsx'
-import Homepage from './components/Homepage.jsx'
 import Main from './components/Main.jsx'
 import GetCast from './components/GetCast.jsx'
 import About from './components/About.jsx'
@@ -25,7 +24,7 @@ function App() {
         <BrowserRouter>
         <Route path="/" component={Header} />
           <Switch>
-            
+
             <Route path="/" exact>
               <GetCastContext.Provider value={{castInfoConditions, setCastInfoConditions}}> 
                 <Main />
@@ -37,8 +36,6 @@ function App() {
                 <GetCast />
               </GetCastContext.Provider>
             </Route>
-
-            <Route path="/home" exact component={Homepage} />
             <Route path="/about" exact component={About} />
             <Route path="/donate" exact component={Donate} />
             <Route path="/contact" exact component={ContactUs} />

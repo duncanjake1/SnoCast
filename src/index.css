@@ -78,5 +78,21 @@ code {
   text-align: center;
   background-color: rgba(91, 171, 245, 0.9);
   border-radius: 15px;
-  padding: 5px;
+  padding: 15px;
+}
+
+.flex-container {
+  padding-top: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  text-align: center;
+  gap: 20px;
+}
+
+@media only screen and (max-width: 800px) {
+  .flex-container {
+    flex-direction: column;
+    gap: 40px;
+  }
 }

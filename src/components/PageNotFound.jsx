@@ -1,13 +1,22 @@
-import React from 'react'
 import { Button } from 'react-bootstrap'
 
-const PageNotFound = ({history}) => {
+import './styles/pageNotFound.css'
+import MountainCss from './MountainCss.jsx'
+
+const Homepage = ({history}) => {
+    
+    function handleClick(){
+        history.push('/')
+    }
     return(
-        <div>
-            <h1>404</h1>
-            <p>Couldn't quite find what you're looking for...</p>
-            <Button onClick={() => history.push('/')}>Go Home?</Button>
+        <div className="pnf-content">
+            <div className="pnf-text">
+                <h1>404</h1>
+                <p>Couldn't quite find what you're looking for...</p>
+            </div>
+            <MountainCss />
+            <Button onClick={handleClick}>Go Home?</Button>
         </div>
     )
 }
-export default PageNotFound
+export default Homepage

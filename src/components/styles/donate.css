@@ -14,3 +14,57 @@
   background-color: rgba(91, 171, 245, 0.5);
   padding: 20px;
 }
+
+.donate-container {
+  padding: 15px;
+}
+
+.donate-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.donate-popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 500px;
+  height: 600px;
+  transform: translate(-50%, -50%);
+  border-radius: 15px;
+  background-color: lightgray;
+  z-index: 7;
+  border: solid black 5px;
+}
+
+.popup-container {
+  height: 100%;
+  margin: 15px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.popup-header {
+  position: relative;
+  text-align: center;
+}
+
+.popup-amounts {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 15px;
+}
+
+.popup-footer {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  bottom: 45px;
+}
