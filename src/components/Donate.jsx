@@ -32,15 +32,14 @@ const Donate = () => {
                     <h2>Don't want to donate to us?</h2>
                     <p>
                         No worries! But our site relies on a number of
-                        other great organizations. Please consider giving 
-                        them a donation for all their great work.
+                        other great organizations. Please consider supporting 
+                        them for everything they provide.
                     </p>
                     <ul>
                         <li>National Avalanche Center</li>
                         <li>Montana Snow Report</li>
                         <li>Colorado Avalanche Organization</li>
                     </ul>
-                    <Button disabled>Donate to our sources</Button>
                 </div>
             </div>
             {donateOpen && <DonatePopUp onClick={handleClose} />}
