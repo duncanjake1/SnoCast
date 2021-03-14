@@ -31,7 +31,7 @@ const About = () => {
                     a text-to-speech program, essentially turning that report into an easily digestible audio podcast!
                 </p>
             </div>
-            <div className="personal-bio">
+            <div className="flex-container">
                 <div className="duncan-bio">
                     <div className="img-container">
                         <a href="https://github.com/duncanjake1" target="_blank" rel="noreferrer">
