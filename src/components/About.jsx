@@ -32,7 +32,7 @@ const About = () => {
                 </p>
             </div>
             <div className="flex-container">
-                <div className="duncan-bio">
+                <div className="duncan-bio flex-item">
                     <div className="img-container">
                         <a href="https://github.com/duncanjake1" target="_blank" rel="noreferrer">
                                 <animated.img 

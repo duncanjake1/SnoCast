@@ -11,6 +11,10 @@
 }
 
 @media only screen and (max-width: 800px) {
+  .main-content-grid{
+    grid-gap: unset;
+  }
+  
   .content-template {
     grid-area: main;
     display: flex;
