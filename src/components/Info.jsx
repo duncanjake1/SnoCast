@@ -5,7 +5,7 @@ import './styles/info.css'
 
 const Info = () => {
     return(
-        <div className="info-container">
+        <div className="info-container flex-item">
             <div className="info-text">
                 <h2>Welcome!</h2>
                 <br/>

@@ -23,7 +23,7 @@ const Map = () => {
    const data = [...snowReportData]
 
     return (
-        <div className="map">
+        <div className="map flex-item">
             <h2 style={{textAlign: 'center', paddingBottom: '7px'}}>Select location to receive report</h2>
     
             <div className="map-container">
