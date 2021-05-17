@@ -7,7 +7,11 @@ import './styles/map.css'
 import MapMarker from './MapMarker.jsx'
 import { MapPinTypeContext } from './MapPinTypeContext.jsx'
 import snowReportData from './testDatas/snowReportData.json'
- 
+
+fetch('http://127.0.0.1:8000/api/')
+    .then(response => response.json())
+    .then(data => console.log(data))
+
 const Map = () => {
 
     const { showAccidents, showSnowConditions } = useContext(MapPinTypeContext)
@@ -17,15 +21,15 @@ const Map = () => {
         address: '',
         lat: 45.676998,
         lng: -111.042931,
-      }
+    }
     const zoomLevel = 6
 
-   const data = [...snowReportData]
+    const data = [...snowReportData]
 
     return (
         <div className="map flex-item">
-            <h2 style={{textAlign: 'center', paddingBottom: '7px'}}>Select location to receive report</h2>
-    
+            <h2 style={{ textAlign: 'center', paddingBottom: '7px' }}>Select location to receive report</h2>
+
             <div className="map-container">
                 <GoogleMap
                     resetBoundsOnResize={true}
@@ -47,7 +51,7 @@ const Map = () => {
                             color="red"
                         />
                     )}
-                    
+
                     {showSnowConditions && data[1].map(report => //data[1] is index for accident reports
                         <MapMarker
                             lat={report.lat}
