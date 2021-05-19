@@ -78,8 +78,14 @@ code {
   text-align: center;
   background-color: rgba(91, 171, 245, 0.9);
   border-radius: 15px;
+  border: solid deepskyblue 3px;
   padding: 15px;
 }
+
+.flex-item{
+  margin-bottom: 15px;
+}
+
 
 .flex-container {
   padding-top: 30px;
@@ -92,9 +98,5 @@ code {
 @media only screen and (max-width: 800px) {
   .flex-container {
     flex-direction: column;
-  }
-
-  .flex-item{
-    margin-bottom: 15px;
   }
 }

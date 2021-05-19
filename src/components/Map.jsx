@@ -5,7 +5,6 @@ import GoogleMap from 'google-map-react'
 import './styles/map.css'
 
 import MapMarker from './MapMarker.jsx'
-import { MapPinTypeContext } from './MapPinTypeContext.jsx'
 
 const url = 'http://127.0.0.1:8000/api/'
 // fetch(url)
@@ -20,7 +19,6 @@ const url = 'http://127.0.0.1:8000/api/'
 const Map = () => {
 
 
-    const { showAccidents, showSnowConditions } = useContext(MapPinTypeContext)
     const [reportData, setReportData] = useState(false)
 
     const API_KEY = `${process.env.REACT_APP_GOOGLE_MAPS_API_KEY}`;
@@ -52,34 +50,6 @@ const Map = () => {
                     defaultCenter={location}
                     defaultZoom={zoomLevel}
                 >
-                    {/* {showAccidents && data[0].map(report => //data[0] is index for accident reports
-                        <MapMarker
-                            key={report.id}
-                            lat={report.lat}
-                            lng={report.lng}
-                            source={report.source}
-                            url={report.url}
-                            imgUrl={report.imgUrl}
-                            description={report.description}
-                            name={report.title}
-                            color="red"
-                        />
-                    )}
-
-                    {showSnowConditions && data[1].map(report => //data[1] is index for accident reports
-                        <MapMarker
-                            lat={report.lat}
-                            lng={report.lng}
-                            source={report.source}
-                            url={report.url}
-                            imgUrl={report.imgUrl}
-                            description={report.description}
-                            name={report.title}
-                            color="blue"
-                        />
-                    )} */}
-                    {//We dont need these in the final product. Not deleting them now for syntax reference
-                    }
 
                     {reportData && reportData.map(report => //data[0] is index for accident reports
                         <MapMarker

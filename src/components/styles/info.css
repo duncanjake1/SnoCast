@@ -10,11 +10,13 @@
   margin: 10px;
 }
 
-.legend-container {
-  background-color: rgba(250, 137, 246, 0.8);
-  border-radius: 15px;
-  border: solid black 3px;
-  padding: 5px;
+#info-header{
+  color: white;
+  font-size: 5em;
+}
+
+#info-description{
+  font-size: 2em;
 }
 
 @media only screen and (max-width: 800px) {
