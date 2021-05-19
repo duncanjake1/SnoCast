@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import GoogleMap from 'google-map-react'
 
 
@@ -6,15 +6,22 @@ import './styles/map.css'
 
 import MapMarker from './MapMarker.jsx'
 import { MapPinTypeContext } from './MapPinTypeContext.jsx'
-import snowReportData from './testDatas/snowReportData.json'
 
-fetch('http://127.0.0.1:8000/api/')
-    .then(response => response.json())
-    .then(data => console.log(data))
+const url = 'http://127.0.0.1:8000/api/'
+// fetch(url)
+//     .then(response => response.json())
+//     .then(data => console.log(data))
+//     .catch(error => {
+//         console.log('error:', error)
+//     })
+
+
 
 const Map = () => {
 
+
     const { showAccidents, showSnowConditions } = useContext(MapPinTypeContext)
+    const [reportData, setReportData] = useState(false)
 
     const API_KEY = `${process.env.REACT_APP_GOOGLE_MAPS_API_KEY}`;
     const location = {
@@ -24,7 +31,14 @@ const Map = () => {
     }
     const zoomLevel = 6
 
-    const data = [...snowReportData]
+    // grab data from db
+    useEffect(async () => {
+        const response = await fetch(url)
+            .then(result => result.json())
+        setReportData(response)
+        console.log(response)
+    }, [])
+
 
     return (
         <div className="map flex-item">
@@ -38,7 +52,7 @@ const Map = () => {
                     defaultCenter={location}
                     defaultZoom={zoomLevel}
                 >
-                    {showAccidents && data[0].map(report => //data[0] is index for accident reports
+                    {/* {showAccidents && data[0].map(report => //data[0] is index for accident reports
                         <MapMarker
                             key={report.id}
                             lat={report.lat}
@@ -62,6 +76,20 @@ const Map = () => {
                             description={report.description}
                             name={report.title}
                             color="blue"
+                        />
+                    )} */}
+                    {//We dont need these in the final product. Not deleting them now for syntax reference
+                    }
+
+                    {reportData && reportData.map(report => //data[0] is index for accident reports
+                        <MapMarker
+                            name={report.Name}
+                            date={report.Date}
+                            lat={report.Lat}
+                            lng={report.Long}
+                            description={report.description}
+                            pubDate={report.pubDate}
+                            color="red"
                         />
                     )}
                 </GoogleMap>
